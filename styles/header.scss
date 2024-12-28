@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+
+}
+
+#header-content-holder{
+    display: flex;
+    border: 1px solid var(--bdr-color);
+    gap: 1.25rem;
+    border-radius: 1.25rem;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    position: fixed;
+
+& a{
+    display: flex;
+    align-items: center;
+
+}}
+
+.header-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    outline: none;
+    fill: var(--fnt-color);
+    opacity: .7;
+    transition: transform 0.6s ease;
+
+}
+.header-icon:hover{
+    opacity: 1;
+    transform: scale(1.2);
+
+}
