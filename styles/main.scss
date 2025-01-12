@@ -4,32 +4,37 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
 }
 
+// Conteiner do vídeo
 #video-holder {
     position: relative; /* Necessário para que os elementos filhos sejam posicionados em relação ao contêiner */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     width: 100%;
-    height: 50rem;
+    height: 56rem;
+    -webkit-box-shadow: 0px 10px 34px 6px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 10px 34px 6px rgba(0,0,0,0.43);
+    box-shadow: 0px 10px 34px 6px rgba(0,0,0,0.43);
 
 
-& h1{
-    position: absolute; /* Permite posicionar o título em cima do vídeo */
-    z-index: 2; /* Coloca o título acima do vídeo */
-    color: var(--fnt-color); /* Contraste com o fundo */
-    font-size: 3rem; /* Ajuste o tamanho do texto */
-    text-align: center;
-    opacity: .7;
-    user-select: none;
-    pointer-events: none;
-
-}}
-
+    & h1{
+        position: absolute; /* Permite posicionar o título em cima do vídeo */
+        z-index: 2; /* Coloca o título acima do vídeo */
+        color: var(--fnt-color); /* Contraste com o fundo */
+        font-size: 3rem; /* Ajuste o tamanho do texto */
+        text-align: center;
+        opacity: .7;
+        user-select: none;
+        pointer-events: none;
+        }
+}
+// Vídeo
 #background-video{
     width: 100%;
-    height: 60rem;
+    height: 56rem;
     opacity: 0.3;
     object-fit: cover;
     position: absolute; /* Para que o vídeo ocupe o fundo */
@@ -37,4 +42,144 @@ main{
     left: 0;
     z-index: 1; /* Certifica-se de que o vídeo fique atrás */
 
+}
+
+// Conteiner do texto animado
+#main-content{
+    margin-top: 5rem;
+}
+
+.txt-animado{
+
+    & span{
+        position: relative;
+        font-size: 3rem;
+        font-weight: bold;
+
+    &::before{
+        content: "";
+        color: var(--fnt-color);
+        animation: palavras 20s infinite;
+    }
+
+    &::after{ //cursor para as palavras -- "efeito digitando"
+        content: "";
+        position: absolute;
+        height: 100%;
+        border-left: 3px solid var(--bdr-color);
+        right: -10px; // Distânciando o cursor das palavras
+        animation: cursor .9s infinite, digitando 20s steps(45) infinite;
+        width: calc(100% + 18px);
+        background-color: var(--bg-color);
+        }   
+    }
+}
+
+// O keyframes abaixo refere-se à animação de um texto sendo digitado
+@keyframes digitando{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 18px);
+    }
+}
+
+
+// O keyframes abaixo refere-se à animação do cursor, para ele ficar "piscando"
+
+@keyframes cursor{
+    0%{
+        border-left: 3px solid var(--bg-color);
+    }
+}
+
+// O keyframes abaixo, refere-se às palavras que são escritas sozinhas na aba main, introdção ao usuário
+
+@keyframes palavras {
+    0%, 20% {
+        content: "Criatividade";
+    }
+    21%, 40% {
+        content: "Desenvolvimento Web";
+    }
+    41%, 60% {
+        content: "Soluções Inovadoras";
+    }
+    61%, 80% {
+        content: "Tecnologia Inteligente";
+    }
+    81%, 100% {
+        content: "Explore meu portfólio!";
+    }
+}
+
+
+// Introdução sobre o Desenvolvedor
+
+#introduction{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.25rem;
+}
+
+#introduction-container{
+    display: flex; 
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        margin-right: 20px;
+        }
+    }
+
+    #txt-introduction-container{
+        width: auto;
+
+    & h2{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    & p{
+        font-size: 16px;
+    }
+}
+
+// Linguagens de programação --Ícones
+
+#programming-languages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    margin-top: 3.5rem;
+}
+
+#programming-languages-container{
+    fill: var(--fnt-color);
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.programming-languages-icon{
+    width: auto;
+    height: auto;
+    scale: (1.5);
+    outline: none;
+    transition: .5s;
+
+    &:hover{
+        transform: scale(1.8);
+    }
 }

@@ -19,6 +19,7 @@
   box-sizing: border-box;
   font: normal 1.25rem "Poppins", sans-serif;
   color: var(--fnt-color);
+  scroll-behavior: smooth;
 }
 
 body {
