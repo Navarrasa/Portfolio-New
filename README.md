@@ -6,4 +6,3 @@ Bem vindo ao meu Portfólio! Aqui eu falo um pouco mais sobre mim, minhas habili
 - Linguagens de programação que estou aprendendo;
 - Meus projetos favoritos;
 - Minhas experiências profissionais;
-- 
