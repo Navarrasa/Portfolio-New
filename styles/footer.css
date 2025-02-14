@@ -28,6 +28,8 @@ footer {
   align-items: center;
   text-align: center;
   gap: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .footer-c div a i {
   font-size: 32px;

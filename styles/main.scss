@@ -9,6 +9,11 @@ main{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.max-width{
+    max-width: 250px;
+}
+
 // Edição do background vídeo
 .video-s{
     display: flex;
@@ -119,4 +124,63 @@ main{
         font-family: "Poppins", sans-serif;
         color: var(--fnt-color);
     }
+}
+
+// Nesta parte, estou editando os SVG's das linguagens de programação
+// Edição da seção de linguagens
+
+.programming-languages{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.programming-languages-c{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.programming-languages-i{
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+    opacity: .6;
+
+
+    & svg{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+// Nesta parte, estou editando a seção de projetos
+// Edição da seção de projetos
+
+.technologies-s{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.technologies-c{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & h1{
+        font-size: 40px;
+        font-weight: 700;
+        font-family: "Ubuntu Condensed", serif;
+        color: var(--fnt-color);
+    }
+
 }
