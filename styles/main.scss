@@ -14,7 +14,7 @@ main{
     align-items: center;
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 1000px;
     margin-bottom: 50px;
 }
 // Container das divisões entre h1 e vídeo
@@ -38,14 +38,14 @@ main{
 
 .bg-video{
     width: 100%;
-    height: 600px;
+    height: 1000px;
     position: relative;
     object-fit: cover;
 }
 
 .bg-video-txt{
     position: absolute;
-    top: 50%;
+    top: 80%;
     user-select: none;
     pointer-events: none;
     outline: none;

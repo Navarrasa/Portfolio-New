@@ -13,7 +13,7 @@ main {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 1000px;
   margin-bottom: 50px;
 }
 
@@ -37,7 +37,7 @@ main {
 
 .bg-video {
   width: 100%;
-  height: 600px;
+  height: 1000px;
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -45,7 +45,7 @@ main {
 
 .bg-video-txt {
   position: absolute;
-  top: 50%;
+  top: 80%;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
