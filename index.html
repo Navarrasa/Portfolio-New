@@ -6,42 +6,59 @@
     <title>Gustavo Bruno | devBruno</title>
     <meta name="description" content="Venha me conhecer!">
     <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Início da tag Header -->
     <header>
-        <section id="header-content-holder">
-            <a href="#"><box-icon name='building-house' class="header-icon"></box-icon></a>
-            <a href="#"><box-icon name='github' type='logo' class="header-icon"></box-icon></a>
-            <a href="#"><box-icon name='linkedin' type='logo' class="header-icon"></box-icon></a>
-            <a href="#"><box-icon type='logo' name='instagram' class="header-icon"></box-icon></a>
-            <button></button>
+        <section class="header-s">
+            <div class="header-c">
+                <div class="separador">
+                    <div class="c-item"><a href="#"><i class='bx bx-home'></i></a></div>
+                    <div class="c-item"><a href="https://github.com/Navarrasa" target="_blank"><i class='bx bxl-github'></i></a></div>
+                    <div class="c-item"><a href="https://github.com/Navarrasa" target="_blank"><i class='bx bxl-linkedin-square'></i></a></div> 
+                    <div class="c-item"><a href="#"><i class='bx bx-book'></i></a></div> 
+                </div>
+                <div id="switch-theme">
+                    <button>
+                        <i class='bx bx-sun' ></i>
+                        <i class='bx bx-moon' ></i>
+                    </button>
+                </div>
+            </div>
         </section>
     </header>
     <!-- Início da tag main -->
     <main>
-
         <!-- Seção que contém o vídeo de introdução ao site -->
-        <section id="video-holder">
-            <video id="background-video" autoplay muted loop>
-                <source src="https://github.com/Navarrasa/Ferramentas/raw/refs/heads/main/gustavao2.mp4" type="video/mp4">
-            </video>
-            <h1 class="ubuntu-condensed-regular">devBruno</h1>
+        <section class="video-s">
+            <div class="video-c">
+                <div class="video">
+                    <video class="bg-video" autoplay muted loop>
+                        <source src="media/bg_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="bg-video-txt">
+                    <h1>devBruno</h1>
+                </div>
+            </div>
         </section>
 
         <!-- Seção que contém um texto animado, falando um pouco dos objetivos do desenvolvedor -->
-        <section id="main-content">
-            <div class="txt-animado">
+        <section class="animated-txt-c">
+            <div class="animated-txt">
                 <span class=""></span>
             </div>
         </section>
 
         <!-- Seção que fala um pouco sobre mim -->
-        <section id="introduction">
-            <div id="introduction-container">
-                <img src="media/imagem.png" alt="Myself" id="myself-photo" title="Esse sou eu">
-                <div id="txt-introduction-container">
+        <section class="introduction">
+            <div class="introduction-c">
+                <div class="img-c">
+                    <img src="media/imagem.png" alt="Myself" class="img-i" title="Esse sou eu">
+                </div>
+                <div class="introduction-txt-c">
                     <h2>Bem vindo! Eu sou Gustavo Bruno!</h2>
                     <p>Tenho 19 anos, sou Desenvolvedor e Designer UI/UX em treinamento! Sou apaixonado em programação e ideias inovadoras para a solução de problemas!</p>
                 </div>
@@ -49,25 +66,46 @@
         </section>
 
         <!-- Seção que contém as tecnologias que o desenvolvedor entende -->
-        <section id="programming-languages">
-            <div id="programming-languages-container">
-                <div class="programming-languages-icon" title="Python"><box-icon name='python' type='logo' ></box-icon></div>
-                <div class="programming-languages-icon" title="Java"><box-icon name='java' type='logo' ></box-icon></div>
-                <div class="programming-languages-icon" title="JavaScript"><box-icon name='javascript' type='logo' ></box-icon></div>
-                <div class="programming-languages-icon" title="PHP"><box-icon name='php' type='logo' ></box-icon></div>
-                <div class="programming-languages-icon" title="HTML5"><box-icon type='logo' name='html5'></box-icon></div>
-                <div class="programming-languages-icon" title="CSS3"><box-icon name='css3' type='logo' ></box-icon></div>
-                <div class="programming-languages-icon" title="Sass"><box-icon name='sass' type='logo' ></box-icon></div>
-                <div class="programming-languages-icon" title="Figma"><box-icon name='figma' type='logo' ></box-icon></div>
-                <div class="programming-languages-icon" title="Git"><box-icon name='git' type='logo' ></box-icon></div>
+        <section class="programming-languages">
+            <div class="programming-languages-c">
+                <div class="programming-languages-i" title="Python">     </div>
+                <div class="programming-languages-i" title="Java">       </div>
+                <div class="programming-languages-i" title="JavaScript"> </div>
+                <div class="programming-languages-i" title="PHP">        </div>
+                <div class="programming-languages-i" title="HTML5">      </div>
+                <div class="programming-languages-i" title="CSS3">       </div>
+                <div class="programming-languages-i" title="Sass">       </div>
+                <div class="programming-languages-i" title="Figma">      </div>
+                <div class="programming-languages-i" title="Git">        </div>
             </div>
         </section>
-
+        <section>
+            <div>
+                <h1>Meus projetos</h1>
+            </div>
+        </section>
     </main>
     <!-- Início da tag Footer -->
     <footer>
-        <section>
-            <p>Este é o rodapé!</p>
+        <section class="footer-s">
+            <div class="footer-c">
+                <h1>Contato</h1>
+            </div>
+            <div class="footer-c">
+                <p>Fique a vontade para entrar em contato comigo!</p>
+            </div>
+            <div class="footer-c">
+                <div class="c-item"><a href="https://github.com/Navarrasa" target="_blank"><i class='bx bxl-github'></i></a></div>
+                <div class="c-item"><a href="https://github.com/Navarrasa" target="_blank"><i class='bx bxl-linkedin-square'></i></a></div>
+            </div>
+        </section>
+        <section class="copyrigth-s">
+            <div class="copyrigth-c">
+                <p>Desenvolvido por Gustavo Bruno</p>
+            </div>
+            <div class="copyrigth-c">
+                <p>&#169; 2025. Todos os direitos reservados.</p>
+            </div>
         </section>
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

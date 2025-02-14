@@ -1,8 +1,57 @@
 footer {
-  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.footer-s {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   justify-content: center;
   align-items: center;
-  height: 200px;
-  margin-top: 20px;
+}
+.footer-s h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Ubuntu Condensed", serif;
+  color: var(--fnt-color);
+}
+
+.footer-c {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.footer-c div a i {
+  font-size: 32px;
+  color: var(--fnt-color);
+  opacity: 0.6;
+}
+
+.copyrigth-s {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.copyrigth-c {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6;
 }/*# sourceMappingURL=footer.css.map */
