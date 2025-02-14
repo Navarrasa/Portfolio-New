@@ -134,8 +134,9 @@ main {
 .programming-languages-c {
   display: grid;
   grid-template-columns: repeat(3, 50px);
-  width: 100%;
+  width: 50%;
   height: auto;
+  padding: 20px;
   justify-content: center;
 }
 
