@@ -5,6 +5,8 @@ main {
   height: auto;
   justify-content: center;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .video-s {
@@ -45,7 +47,6 @@ main {
 
 .bg-video-txt {
   position: absolute;
-  top: 80%;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;

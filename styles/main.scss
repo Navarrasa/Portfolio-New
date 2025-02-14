@@ -6,6 +6,8 @@ main{
     height: auto;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 // Edição do background vídeo
 .video-s{
@@ -45,7 +47,7 @@ main{
 
 .bg-video-txt{
     position: absolute;
-    top: 80%;
+    // top: 80%;
     user-select: none;
     pointer-events: none;
     outline: none;
