@@ -138,9 +138,9 @@ main{
     flex-direction: row;
 }
 .programming-languages-c{
-    display: grid;
-    grid-template-columns: repeat(3, 50px);
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     height: auto;
     padding: 20px;
     justify-content: center;
