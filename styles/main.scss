@@ -48,9 +48,11 @@ main{
 
 .bg-video{
     position: relative;
-    padding: 20px;
     object-fit: cover;
     padding-top: 0;
+    width: 100%;
+    height: 1000px  !important;
+    z-index: -1;
 }
 
 .bg-video-txt{
@@ -250,9 +252,9 @@ main{
     align-items: center;
 
     & img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 250px;
+        height: 160px;
+        object-fit: fill;
     }
 }
 
