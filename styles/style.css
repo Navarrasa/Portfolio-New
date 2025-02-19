@@ -11,6 +11,9 @@
   --fnt-color:#FBFEF9;
   --btn-color:#66717E;
   --emphasis-color:#5f5955;
+  --bg--color-btn: #4e4e4e;
+  --bg--color-revamp-hover: #5a5757;
+  --fnt-color-hover: #c9c9c9;
 }
 
 * {
