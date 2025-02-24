@@ -61,12 +61,13 @@ main {
           user-select: none;
   pointer-events: none;
   outline: none;
-}
-.bg-video-txt h1 {
-  font-size: 40px;
-  font-weight: 700;
-  font-family: "Ubuntu Condensed", serif;
-  color: var(--fnt-color);
+ 
+  & h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Ubuntu Condensed", serif;
+    color: var(--fnt-color);
+  }
 }
 
 .introduction {
@@ -114,18 +115,19 @@ main {
   flex-direction: column;
   padding: 30px 0px 30px 0px;
   gap: 1rem;
-}
-.introduction-txt-c h2 {
-  font-size: 34px;
-  font-weight: 700;
-  font-family: "Ubuntu Condensed", serif;
-  color: var(--fnt-color);
-}
-.introduction-txt-c p {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-  color: var(--fnt-color);
+ 
+  & h2 {
+    font-size: 34px;
+    font-weight: 700;
+    font-family: "Ubuntu Condensed", serif;
+    color: var(--fnt-color);
+  }
+  & p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: var(--fnt-color);
+  }
 }
 
 .programming-languages {
@@ -151,15 +153,16 @@ main {
   height: 32px;
   margin: 10px;
   opacity: 0.6;
-}
-.programming-languages-i svg {
-  width: 32px;
-  height: 32px;
-}
-.programming-languages-i svg:hover {
-  opacity: 1;
-  transform: scale(1.4);
-  transition: 0.7s;
+
+  & svg {
+      width: 32px;
+      height: 32px;
+  }
+  & svg:hover {
+    opacity: 1;
+    transform: scale(1.4);
+    transition: 0.7s;
+  }
 }
 
 .technologies-s {
@@ -180,16 +183,17 @@ main {
   align-items: center;
   flex-direction: column;
   padding: 40px 0px 10px 0px;
-}
-.technologies-c h1 {
-  font-size: 40px;
-  font-weight: 700;
-  font-family: "Ubuntu Condensed", serif;
-  color: var(--fnt-color);
-}
-.technologies-c p {
-  text-align: center;
-  padding: 5px;
+  
+  & h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Ubuntu Condensed", serif;
+    color: var(--fnt-color);
+  } 
+  & p {
+    text-align: center;
+    padding: 5px;
+  }
 }
 
 .technologies-card-c {
@@ -219,34 +223,36 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  
+  & h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: var(--bg--color-btn);
+    border-radius: 20px;
+    margin-bottom: 5px;
+    border: 1px solid var(--bdr-color);
+  }
+  & p {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
 }
-.technologies-card-description h3 {
-  font-size: 20px;
-  font-weight: 600;
-  padding: 10px;
-  background-color: var(--bg--color-btn);
-  border-radius: 20px;
-  margin-bottom: 5px;
-  border: 1px solid var(--bdr-color);
-}
-.technologies-card-description p {
-  font-size: 12px;
-  font-weight: 400;
-  padding: 10px;
-  margin-bottom: 5px;
-}
-
+  
 .technologies-card-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.technologies-card-img img {
-  width: 250px;
-  height: 160px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  
+  & img {
+    width: 250px;
+    height: 160px;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
 }
 
 .technologies-card-buttons {
@@ -256,26 +262,27 @@ main {
   align-items: center;
   gap: 10px;
   padding-top: 0.5rem;
+  
+  & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--bg--color-btn);
+    border: 1px solid var(--bdr-color);
+    color: var(--fnt-color);
+    font-size: 10px;
+    font-weight: 600;
+  }
+  & button:hover {
+    background-color: var(--bg--color-revamp-hover);
+    color: var(--fnt-color-hover);
+    transition: 0.7s;
+    transform: scale(0.9);
+  }
+  & button i {
+    font-size: 32px;
+    padding-right: 5px;
+  }
 }
-.technologies-card-buttons button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 20px;
-  background-color: var(--bg--color-btn);
-  border: 1px solid var(--bdr-color);
-  color: var(--fnt-color);
-  font-size: 10px;
-  font-weight: 600;
-}
-.technologies-card-buttons button:hover {
-  background-color: var(--bg--color-revamp-hover);
-  color: var(--fnt-color-hover);
-  transition: 0.7s;
-  transform: scale(0.9);
-}
-.technologies-card-buttons button i {
-  font-size: 32px;
-  padding-right: 5px;
-}/*# sourceMappingURL=main.css.map */

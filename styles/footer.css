@@ -13,12 +13,13 @@ footer {
   width: 50%;
   justify-content: center;
   align-items: center;
-}
-.footer-s h1 {
-  font-size: 40px;
-  font-weight: 700;
-  font-family: "Ubuntu Condensed", serif;
-  color: var(--fnt-color);
+ 
+  & h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Ubuntu Condensed", serif;
+    color: var(--fnt-color);
+  }
 }
 
 .footer-c {
@@ -30,11 +31,12 @@ footer {
   gap: 1rem;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-.footer-c div a i {
-  font-size: 32px;
-  color: var(--fnt-color);
-  opacity: 0.6;
+ 
+  & div a i {
+    font-size: 32px;
+    color: var(--fnt-color);
+    opacity: 0.6;
+  }
 }
 
 .copyrigth-s {
@@ -56,4 +58,4 @@ footer {
   font-size: 14px;
   font-weight: 400;
   opacity: 0.6;
-}/*# sourceMappingURL=footer.css.map */
+}

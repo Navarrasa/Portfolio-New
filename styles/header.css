@@ -40,21 +40,21 @@ header {
 .c-item {
   width: 24px;
   height: 24px;
-}
-.c-item a {
-  text-decoration: none;
-  outline: none;
-}
-.c-item a i {
-  font-size: 24px;
-  color: var(--fnt-color);
-  opacity: 0.6;
-}
-
-.c-item:hover i {
-  transform: scale(1.5);
-  transition: 0.7s;
-  opacity: 1;
+  & a {
+    text-decoration: none;
+    outline: none;
+  }
+  & a i {
+    font-size: 24px;
+    color: var(--fnt-color);
+    opacity: 0.6;
+  }
+  
+  &:hover i {
+    transform: scale(1.5);
+    transition: 0.7s;
+    opacity: 1;
+  }
 }
 
 #switch-theme {
@@ -84,4 +84,4 @@ header {
   opacity: 1;
   transition: 0.7s;
   cursor: pointer;
-}/*# sourceMappingURL=header.css.map */
+}
