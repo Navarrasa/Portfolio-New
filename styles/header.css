@@ -1,87 +1,206 @@
+/* Estilos Mobile-First */
 header {
   display: flex;
-  flex-direction: row;
   width: 100%;
   height: auto;
-  padding-top: 20px;
+  padding: 30px 0;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   z-index: 1000;
-}
 
-.header-s {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: transparent;
-  align-items: center;
-  width: 60%;
-  border-radius: 10px;
-  border: 1px solid var(--bdr-color);
-  height: 60px;
-}
-
-.header-c {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.separador {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.c-item {
-  width: 24px;
-  height: 24px;
-  & a {
-    text-decoration: none;
-    outline: none;
-  }
-  & a i {
-    font-size: 24px;
-    color: var(--fnt-color);
-    opacity: 0.6;
-  }
+  & section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
   
-  &:hover i {
-    transform: scale(1.5);
-    transition: 0.7s;
-    opacity: 1;
+    & nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border: 1px solid var(--bdr-color);
+      border-radius: 20px;
+      padding: 5px;
+      backdrop-filter: blur(10px);
+  
+      & ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+
+        & div{
+          display: flex;
+          padding: 1rem;
+          gap: 10px;
+
+          & li{
+            list-style: none;
+            
+            & a{
+              color: var(--fnt-color);
+              
+             & i{
+                font-size: 1.5rem;
+                opacity: .6;
+                
+                &:hover{
+                  opacity: 1;
+                  transition: all .6s;
+                  transform: scale(1.2);
+                  padding: 5px;
+               
+                }
+              }
+            } 
+          }
+        }
+      }
+    }
   }
 }
 
-#switch-theme {
-  width: 24px;
-  height: 24px;
-}
-#switch-theme i {
-  font-size: 24px;
-  color: var(--fnt-color);
-  opacity: 0.6;
-}
-#switch-theme button {
-  width: 24px;
-  height: 24px;
-  font-size: auto;
-  background: transparent;
-  outline: none;
-  border: none;
+/* Estilos para dispositivos de médio porte (tablets). */
+@media screen and (min-width: 540px){
+
+  header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  
+    & section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 300px;
+      width: 100%;
+    
+      & nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 1px solid var(--bdr-color);
+        border-radius: 20px;
+        padding: .5rem;
+        backdrop-filter: blur(10px);
+    
+        & ul{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 100%;
+  
+          & div{
+            display: flex;
+            padding: .7rem;
+            gap: 10px;
+  
+            & li{
+              list-style: none;
+              
+              & a{
+                color: var(--fnt-color);
+                
+               & i{
+                  font-size: 1.7rem;
+                  opacity: .6;
+                  
+                  &:hover{
+                    opacity: 1;
+                    transition: all .6s;
+                    transform: scale(1.2);
+                    padding: .5rem;
+                 
+                  }
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+  } 
 }
 
-#switch-theme i:last-child {
-  display: none;
-}
+/* Estilos para dispositivos de grande porte (deskops, notebooks) */
+@media screen and (min-width: 1024px){
 
-#switch-theme button:hover {
-  transform: scale(1.5);
-  opacity: 1;
-  transition: 0.7s;
-  cursor: pointer;
+  header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  
+    & section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 300px;
+      width: 100%;
+    
+      & nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 1px solid var(--bdr-color);
+        border-radius: 20px;
+        padding: .5rem;
+        backdrop-filter: blur(10px);
+    
+        & ul{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 100%;
+  
+          & div{
+            display: flex;
+            padding: .7rem;
+            gap: 10px;
+  
+            & li{
+              list-style: none;
+              
+              & a{
+                color: var(--fnt-color);
+                
+               & i{
+                  font-size: 1.7rem;
+                  opacity: .6;
+                  
+                  &:hover{
+                    opacity: 1;
+                    transition: all .6s;
+                    transform: scale(1.2);
+                    padding: .5rem;
+                 
+                  }
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
 }
